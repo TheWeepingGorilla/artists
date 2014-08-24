@@ -1,0 +1,8 @@
+<h1>New Artist</h1>
+
+<%= render('layouts/errors', :object => @artist) %>
+
+<form action="/artists" method="post">
+  <%= render('form') %>
+  <button>Create artist</button>
+</form>

@@ -1,0 +1,15 @@
+<h1><%= @artist.name %></h1>
+<ul>
+  <% @recipe.tags.each do |tag| %>
+    <li><a href="/tags/<%= tag.id %>"><%= tag.name %></a></li>
+  <% end %>
+</ul>
+
+<a href="/artists/<%= @artist.id %>/tags">Add a tag</a>
+
+<a href="/artists/<%= @artist.id %>"
+   data-confirm="You sure?"
+   data-method="delete"
+   rel="nofollow">Delete</a>
+
+ <a href="/artists/<%= @artist.id %>/edit">Edit Artist</a>

@@ -1,0 +1,18 @@
+<h1>Artists</h1>
+
+<ul>
+  <% @artists.each do |artist| %>
+    <li><a href="/artists/<%= artist.id %>"><%= artist.name %></a></li>
+  <% end %>
+</ul>
+
+<a href="/artists/new">Add Artist</a>
+
+<a href="/tags">Tag Menu</a>
+
+<p>
+  <form action = '/', method = "post">
+    <label for="search_string">Search String</label>
+    <input id="search_string" name="search[string]" type="text">
+  </form>
+</p>
