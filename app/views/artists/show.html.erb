@@ -1,6 +1,6 @@
 <h1><%= @artist.name %></h1>
 <ul>
-  <% @recipe.tags.each do |tag| %>
+  <% @artist.tags.each do |tag| %>
     <li><a href="/tags/<%= tag.id %>"><%= tag.name %></a></li>
   <% end %>
 </ul>
