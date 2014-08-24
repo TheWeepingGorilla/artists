@@ -3,5 +3,5 @@ class Artist < ActiveRecord::Base
 
   has_and_belongs_to_many :tags
 
-  default_scope {order('name DESC')}
+  default_scope {order('name')}
 end

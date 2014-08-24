@@ -1,11 +1,10 @@
 <h1><%= @artist.name %></h1>
+<h3>Tags:</h3>
 <ul>
   <% @artist.tags.each do |tag| %>
     <li><a href="/tags/<%= tag.id %>"><%= tag.name %></a></li>
   <% end %>
 </ul>
-
-<a href="/artists/<%= @artist.id %>/tags">Add a tag</a>
 
 <a href="/artists/<%= @artist.id %>"
    data-confirm="You sure?"

@@ -1,0 +1,16 @@
+<h1><%= @tag.name %></h1>
+
+<h2>Artists:</h2>
+
+<ul>
+  <% @tag.artists.each do |artist| %>
+    <li><a href="/artists/<%= artist.id %>"><%= artist.name %></a></li>
+  <% end %>
+</ul>
+
+<a href="/tags/<%= @tag.id %>"
+   data-confirm="You sure?"
+   data-method="delete"
+   rel="nofollow">Delete</a>
+
+ <a href="/tags/<%= @tag.id %>/edit">Edit Tag</a>

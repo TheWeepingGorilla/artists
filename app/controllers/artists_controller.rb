@@ -34,12 +34,15 @@ class ArtistsController < ApplicationController
 
   def edit
     @artist = Artist.find(params[:id])
+    @tags = Tag.all
     render('artists/edit.html.erb')
   end
 
   def update
     @artist = Artist.find(params[:id])
     if @artist.update(params[:artist])
+      tag = Tag.find(params[:tags])
+      @artist.tags << tag
       flash[:notice] = "Artist updated."
       redirect_to("/")
     else

@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   match('/artists/:id/edit', {via: :get, to: 'artists#edit'})
   match('/artists/:id', {via: [:patch, :put], to: 'artists#update'})
 
-  match('/', {via: :get, to: 'tags#index'})
+  match('/tags', {via: :get, to: 'tags#index'})
   match('/tags/new', {via: :get, to: 'tags#new'})
   match('/tags', {via: :post, to: 'tags#create'})
   match('/tags/:id', {via: :get, to: 'tags#show'})
