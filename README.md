@@ -1,5 +1,7 @@
 This is a Ruby On Rails (minimal magic) demonstration.
 
+LIVE DEMO at: http://artists-demo.herokuapp.com/
+
 The app is called artists; it allows one to CRUD artists and tags and tag an artist with multiple tags.
 For example, the artist Eric Clapton could be tagged as rock, reggae and pop.
 
@@ -24,6 +26,7 @@ Reused view code is factored into partials.
 The app use the asset pipeline for Sass / Bootstrap.
 
 Author: Sean Morrison
+
 License: Public Domain
 
 
